@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/getStartFragment">
+
+    <fragment
+        android:id="@+id/getStartFragment"
+        android:name="com.example.figma.ui.getStart.GetStartFragment"
+        android:label="fragment_get_start"
+        tools:layout="@layout/fragment_get_start" />
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.figma.ui.signIn.SignInFragment"
+        android:label="Sign In"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_acceptFragment"
+            app:destination="@id/acceptFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/acceptFragment"
+        android:name="com.example.figma.ui.accept.AcceptFragment"
+        android:label="fragment_accept"
+        tools:layout="@layout/fragment_accept">
+        <argument
+            android:name="verId"
+            app:argType="string"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.figma.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_favorites"
+        android:name="com.example.figma.ui.favorites.FavoritesFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_favorites" />
+
+    <fragment
+        android:id="@+id/navigation_add"
+        android:name="com.example.figma.ui.add.AddFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_add" />
+
+    <fragment
+        android:id="@+id/navigation_message"
+        android:name="com.example.figma.ui.message.MessageFragment"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.figma.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

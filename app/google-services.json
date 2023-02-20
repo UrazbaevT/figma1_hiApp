@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "352007327796",
+    "project_id": "figma1-hiapp",
+    "storage_bucket": "figma1-hiapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352007327796:android:33ab77c6a96d0277bb7a61",
+        "android_client_info": {
+          "package_name": "com.example.figma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "352007327796-vcvdtcrc1uaptqlofk9vkfsbefiqcpm5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwWvfemT89GW2WNona78JXxQDcVqaRNUQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "352007327796-vcvdtcrc1uaptqlofk9vkfsbefiqcpm5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
